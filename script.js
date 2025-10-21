@@ -259,12 +259,12 @@ initializeTheme();
 
 // Função para compartilhar termos (exemplo de funcionalidade extra)
 function shareTerms() {
-    const text = 'Confira os Termos de Uso do Painel de Revendedores JB Tools!';
+    const text = 'Confira os Termos de Uso do Painel de Revendedores Jb Tools!';
     const url = window.location.href;
     
     if (navigator.share) {
         navigator.share({
-            title: 'Termos de Uso - JB Tools',
+            title: 'Termos de Uso - Jb Tools',
             text: text,
             url: url
         }).catch(err => console.log('Erro ao compartilhar:', err));
