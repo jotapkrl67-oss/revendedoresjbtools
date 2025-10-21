@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos de Uso - JB Tools</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-gradient"></div>
+    
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo-container">
+                    <div class="logo-wrapper">
+                        <img src="assets/logo.png" alt="Logo JB Tools" class="logo">
+                    </div>
+                </div>
+                <div class="nav-title">
+                    <h1>Termos de Uso</h1>
+                    <p>Painel de Revendedores</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="hero-section">
+            <h2>Bem-vindo ao Painel de Revendedores</h2>
+            <p>Conheça as regras e políticas que regem nossa plataforma</p>
+        </div>
+
+        <div class="terms-wrapper">
+            <section class="term-card" data-section="1">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <h2>Condições de Venda</h2>
+                </div>
+                <div class="card-content">
+                    <div class="term-item">
+                        <div class="term-dot"></div>
+                        <p>As vendas realizadas devem ter valor <strong>mínimo de R$ 29,99</strong>.</p>
+                    </div>
+                    <div class="term-item">
+                        <div class="term-dot"></div>
+                        <p><strong>Não é permitido</strong> realizar transações abaixo desse valor em hipótese alguma.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="term-card" data-section="2">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h2>Compartilhamento e Privacidade</h2>
+                </div>
+                <div class="card-content">
+                    <div class="term-item">
+                        <div class="term-dot"></div>
+                        <p>É <strong>terminantemente proibido</strong> adicionar pessoas aleatoriamente, divulgar logins, senhas ou qualquer tipo de dado de acesso de forma inadequada.</p>
+                    </div>
+                    <div class="term-item">
+                        <div class="term-dot"></div>
+                        <p>Cada conta é de <strong>uso individual e intransferível</strong>. O compartilhamento de acesso com terceiros <strong>não é permitido</strong>.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="term-card warning-card" data-section="3">
+                <div class="card-header">
+                    <div class="card-icon warning-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h2>Monitoramento e Consequências</h2>
+                </div>
+                <div class="card-content">
+                    <div class="term-item">
+                        <div class="term-dot"></div>
+                        <p>Todas as atividades dentro da plataforma são <strong>monitoradas e registradas em log</strong>.</p>
+                    </div>
+                    <div class="term-item warning-item">
+                        <div class="warning-badge">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <p>Caso seja identificado <strong>qualquer tipo de irregularidade, violação ou tentativa de burlar as regras</strong>, o acesso será <strong style="color: #dc3545;">imediatamente suspenso, sem direito a reembolso</strong>.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="cta-section">
+            <p>Ao utilizar a plataforma, você concorda com todos os termos acima.</p>
+            <button class="cta-button" id="acceptBtn">Aceitar Termos</button>
+        </div>
+
+        <div class="reseller-cta" id="resellerCta" style="display: none;">
+            <div class="reseller-content">
+                <div class="reseller-badge">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <h3>Torne-se um Revendedor</h3>
+                <p>Expanda seus negócios com a JB Tools</p>
+                <button class="reseller-cta-button" id="becomeResellerBtn">
+                    Quero me tornar Revendedor
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 JB Tools. Todos os direitos reservados.</p>
+            <p>Última atualização: Outubro de 2024</p>
+        </div>
+    </footer>
+
+    <!-- Modal PIX -->
+    <div class="modal" id="pixModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closePixModal">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="modal-header">
+                <h2>Torne-se um Revendedor</h2>
+                <p>Complete o pagamento para ativar sua conta</p>
+            </div>
+
+            <div class="pix-container">
+                <div class="qr-code-section">
+                    <h3>Escaneie o QR Code</h3>
+                    <img src="assets/qrcode-pix.png" alt="QR Code PIX" class="qr-code">
+                </div>
+
+                <div class="pix-details">
+                    <div class="detail-item">
+                        <label>Chave PIX (Copia e Cola):</label>
+                        <div class="copy-container">
+                            <input type="text" id="pixKey" value="616c37e1-5b48-4213-bf9a-9ec880a525af" readonly>
+                            <button class="copy-btn" id="copyPixBtn">
+                                <i class="fas fa-copy"></i>
+                                Copiar
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="detail-item">
+                        <label>Beneficiário:</label>
+                        <p class="detail-value">Samuel Camargo Junior</p>
+                    </div>
+
+                    <div class="detail-item">
+                        <label>Valor a Pagar:</label>
+                        <p class="detail-value amount">R$ 180,00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment-instructions">
+                <h3>Instruções de Pagamento:</h3>
+                <ol>
+                    <li>Escaneie o QR Code com seu aplicativo de banco ou PIX</li>
+                    <li>Ou copie a chave PIX e cole no seu aplicativo</li>
+                    <li>Confirme o pagamento de <strong>R$ 180,00</strong></li>
+                    <li>Após o pagamento, envie o comprovante pelo WhatsApp</li>
+                </ol>
+            </div>
+
+            <div class="whatsapp-section">
+                <p>Após realizar o pagamento, envie o comprovante para:</p>
+                <a href="https://api.whatsapp.com/send/?phone=554196844896&text&type=phone_number&app_absent=0" class="whatsapp-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    Enviar Comprovante via WhatsApp
+                </a>
+            </div>
+
+            <button class="modal-confirm-btn" id="confirmPaymentBtn">
+                Já Enviei o Comprovante
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
