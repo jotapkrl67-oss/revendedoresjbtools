@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Termos de Uso - Painel de Revendedores JB Tools">
+  <title>Termos de Uso - JB Tools</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <img src="images/logo.png" alt="JB Tools" class="logo">
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Title Section -->
+    <div class="title-section">
+      <h1>Termos de Uso</h1>
+      <p class="subtitle">PAINEL REVENDEDORES</p>
+      <p class="description">Leia atentamente os termos e condições que regem o uso da plataforma</p>
+    </div>
+
+    <!-- Terms Sections -->
+    <div class="terms-container">
+      <!-- Section 1: Condições de Venda -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-number">1</div>
+          <h2 class="card-title">Condições de Venda</h2>
+        </div>
+        <div class="card-content">
+          <div class="term-item">
+            <div class="term-bullet">•</div>
+            <div class="term-text">
+              As vendas realizadas devem ter valor <strong>mínimo de R$ 29,99</strong>.
+            </div>
+          </div>
+          <div class="term-item">
+            <div class="term-bullet">•</div>
+            <div class="term-text">
+              <span class="danger">Não é permitido</span> realizar transações abaixo desse valor em hipótese alguma.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2: Compartilhamento e Privacidade -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-number">2</div>
+          <h2 class="card-title">Compartilhamento e Privacidade</h2>
+        </div>
+        <div class="card-content">
+          <div class="term-item">
+            <div class="term-bullet">•</div>
+            <div class="term-text">
+              É <span class="danger">terminantemente proibido</span> adicionar pessoas aleatoriamente, divulgar logins, senhas ou qualquer tipo de dado de acesso de forma inadequada.
+            </div>
+          </div>
+          <div class="term-item">
+            <div class="term-bullet">•</div>
+            <div class="term-text">
+              Cada conta é <strong>de uso individual e intransferível</strong>. O compartilhamento de acesso com terceiros <span class="danger">não é permitido</span>.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3: Monitoramento e Consequências -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-number">3</div>
+          <h2 class="card-title">Monitoramento e Consequências</h2>
+        </div>
+        <div class="card-content">
+          <div class="term-item">
+            <div class="term-bullet">•</div>
+            <div class="term-text">
+              Todas as atividades dentro da plataforma são <strong>monitoradas e registradas em log</strong>.
+            </div>
+          </div>
+          <div class="term-item">
+            <svg class="term-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3.05h16.94a2 2 0 0 0 1.71-3.05L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            <div class="term-text">
+              Caso seja identificado <strong>qualquer tipo de irregularidade, violação ou tentativa de burlar as regras</strong>, o acesso será <span class="danger">imediatamente suspenso, sem direito a reembolso</span>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Info -->
+    <div class="footer-section">
+      <div class="footer-content">
+        <p class="footer-text">
+          Ao utilizar a plataforma, você concorda com todos os termos e condições acima descritos.
+        </p>
+        
+        <!-- Become Reseller Button -->
+        <button id="becomeResellerBtn" class="btn btn-primary" style="font-size: 1.125rem; padding: 0.75rem 2rem;">
+          Quero me tornar revendedor
+        </button>
+
+        <p class="footer-copyright">
+          © 2025 JB Tools. Todos os direitos reservados.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Terms Acceptance Modal -->
+  <div id="termsModal" class="modal-overlay">
+    <div class="modal">
+      <div class="modal-header">
+        <div>
+          <h2 class="modal-title">Aceitar Termos de Uso</h2>
+          <p class="modal-description">Leia e aceite os termos para continuar</p>
+        </div>
+        <button id="closeTermsBtn" class="modal-close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-content">
+        <div>
+          <p style="font-weight: 600; margin-bottom: 0.5rem; color: var(--gray-900);">Você concorda com:</p>
+          <ul class="modal-list">
+            <li>Valor mínimo de vendas de R$ 29,99</li>
+            <li>Não compartilhar dados de acesso</li>
+            <li>Uso individual e intransferível da conta</li>
+            <li>Monitoramento de atividades na plataforma</li>
+            <li>Suspensão imediata em caso de irregularidades</li>
+          </ul>
+        </div>
+        <div class="modal-buttons">
+          <button id="rejectTermsBtn" class="btn btn-secondary">Recusar</button>
+          <button id="acceptTermsBtn" class="btn btn-primary">Aceitar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Payment Modal -->
+  <div id="paymentModal" class="modal-overlay">
+    <div class="modal">
+      <div class="modal-header">
+        <div>
+          <h2 class="modal-title">Pagamento PIX</h2>
+          <p class="modal-description">Complete seu pagamento para se tornar revendedor</p>
+        </div>
+        <button id="closePaymentBtn" class="modal-close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-content">
+        <!-- QR Code -->
+        <div class="qr-code-container">
+          <div class="qr-code-box">
+            <img src="images/qrcode-pix-pagamento.png" alt="QR Code PIX">
+          </div>
+        </div>
+
+        <!-- Payment Details -->
+        <div class="payment-details">
+          <div class="payment-amount">
+            <span class="payment-amount-label">Valor a pagar</span>
+            <span class="payment-amount-value">R$ 180,00</span>
+          </div>
+          <div class="payment-divider">
+            <p class="pix-key-label">Chave PIX (Aleatória)</p>
+            <div class="pix-key-container">
+              <div class="pix-key-input" id="pixKeyDisplay">616c37e1-5b48-4213-bf9a-9ec880a525af</div>
+              <button id="copyPixKeyBtn" class="btn btn-primary btn-small">
+                <svg id="copyIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+                <svg id="checkIcon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </button>
+            </div>
+            <p id="copyFeedback" class="copy-feedback hidden">Copiado!</p>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <p class="contact-info-item">
+            <strong>Titular:</strong> Samuel Camargo Junior
+          </p>
+          <p class="contact-info-item">
+            Após realizar o pagamento, envie o comprovante no WhatsApp
+          </p>
+        </div>
+
+        <!-- WhatsApp Button -->
+        <button id="whatsappBtn" class="btn btn-success" style="width: 100%; font-size: 1rem;">
+          Enviar comprovante no WhatsApp
+        </button>
+        <button id="closePaymentBtn" class="btn btn-secondary" style="width: 100%;">
+          Fechar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
